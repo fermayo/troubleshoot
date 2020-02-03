@@ -8,8 +8,8 @@ steps:
           always-pull: true
           mount-checkout: true
           workdir: /go/src/github.com/replicatedhq/troubleshoot
-	  env:
-	    - SCOPE_DSN
+          env:
+            - SCOPE_DSN
   - wait
 
   - commands:
