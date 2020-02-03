@@ -42,6 +42,7 @@ ffi: fmt vet
 
 # Run tests
 test: generate fmt vet
+	env
 	go test ./pkg/... ./cmd/... -coverprofile cover.out
 
 .PHONY: support-bundle
